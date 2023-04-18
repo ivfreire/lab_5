@@ -8,7 +8,7 @@ O objetivo deste experimento é medir os espectros de emissão e absorção de r
 
 $$ n \lambda = a \sin \beta $$
 
-Dado que a energia do fóton é expressa por $E_f=\frac{hc}{\lambda}, temos para a energia:$
+Dado que a energia do fóton é expressa por $E_f=\frac{hc}{\lambda}$, temos para a energia:
 
 $$ E_f = \frac{nhc}{a \sin \beta} $$
 
