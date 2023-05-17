@@ -17,7 +17,7 @@ for i in range(10):
 table = np.array(table)
 
 data['ruido']	= table.mean(axis=0)
-data['sRuido']	= table.std(axis=0)
+data['sRuido']	= table.std(axis=0) / np.sqrt(10)
 
 for i,label in enumerate(labels):
 	if label != 'Ruido':
@@ -35,7 +35,7 @@ for i,label in enumerate(labels):
 			print(intensity)
 
 			data[f'{labels[i]}_{intensity}']	= table.mean(axis=0)
-			data[f's{labels[i]}_{intensity}']	= table.std(axis=0)
+			data[f's{labels[i]}_{intensity}']	= table.std(axis=0) / np.sqrt(10)
 
 df = pd.DataFrame(data)
 df.to_csv('dados.csv')
